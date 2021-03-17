@@ -3,9 +3,43 @@
         <head>
             <link rel="stylesheet" href="CSS/reset.css">
             <link rel="stylesheet" href="CSS/style.css">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200;300;400&display=swap" rel="stylesheet">
         </head>
         <body>
-            
+            <div id="title">TicTacToe!</div>
+            <div id='gamecontainer'>
+                <div id="players">
+                    <form class="playerForm" onsubmit="return false" id="player1">
+                        <div class='mark'>X</div>
+                        <label class='namedisplay' id='player1NameDisplay'></label>
+                        <input type="text" class="nameinput" id='player1NameInput' placeholder="PLAYER 1" required><br>
+                        <input type="button" class='readybutton' id="createplayer1" value="READY!">
+                    </form>
+                    <div id='winnerAlert'>
+                        <div id='winner'></div>
+                        <button id='restartbutton'>RESTART</button>
+                    </div>
+                    <form class="playerForm" onsubmit="return false" id="player2">
+                        <div class='mark'>O</div>
+                        <label class='namedisplay' id='player2NameDisplay'></label>
+                        <input type="text" class="nameinput" id='player2NameInput' placeholder="PLAYER 2" required><br>
+                        <input type="button" class='readybutton' id="createplayer2" value="READY!">
+                    </form>
+                </div>
+                <div id='gameboard'>
+                    <div class='spot' id='0'></div>
+                    <div class='spot' id='1'></div>
+                    <div class='spot' id='2'></div>
+                    <div class='spot' id='3'></div>
+                    <div class='spot' id='4'></div>
+                    <div class='spot' id='5'></div>
+                    <div class='spot' id='6'></div>
+                    <div class='spot' id='7'></div>
+                    <div class='spot' id='8'></div>
+                </div>
+            </div>
+
             <script src="script.js"></script>
         </body>
     </html>
